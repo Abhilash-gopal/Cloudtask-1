@@ -12,31 +12,27 @@ Launched an Ubuntu VM on GCP
 
 SSH in to the VM
 
-Switch to root user 
-
-sudo su 
-
 Update the packages
 
-apt update && upgrade -y
+sudo apt update && upgrade -y
 
 
-Install python3 and pip
+sudo install python3 and pip
 
-apt install python3 python3-pip -y
+sudo apt install python3 python3-pip -y
 
-Install Flask
+sudo install Flask
 
-pip3 install flask
+sudo pip3 install flask
 
 
 Verify installation
 
-python3 --version
+sudo python3 --version
 
-pip3 --version
+sudo pip3 --version
 
-python3 -m flask --version
+sudo python3 -m flask --version
 
 
 Create a folder pythonapp in the home directory
@@ -53,17 +49,17 @@ Setup systemd service to start the app automatically on reboot
 
 Create a service file for add script
 
-vi /etc/systemd/system/myapp.service
+sudo vi /etc/systemd/system/myapp.service
 
 Enable and start the service 
 
-systemctl daemon-reload
+sudo systemctl daemon-reload
 
-systemctl enable myapp
+sudo systemctl enable myapp
 
-systemctl start myapp
+sudo systemctl start myapp
 
-systemctl status myapp
+sudo systemctl status myapp
 
 
 View the hosted service 
